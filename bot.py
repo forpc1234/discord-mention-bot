@@ -2,10 +2,8 @@ import discord
 import requests
 import os
 from dotenv import load_dotenv
-from webserver import keep_alive
 # Load .env file
 load_dotenv()
-keep_alive()
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
 WEBHOOK_URL = os.environ.get("N8N_WEBHOOK_URL")
 
